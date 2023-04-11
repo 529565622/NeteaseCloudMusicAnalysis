@@ -1,0 +1,2 @@
+# NeteaseCloudMusicAnalysis
+用于获取网易云音乐音乐直链的tampermonkey脚本
