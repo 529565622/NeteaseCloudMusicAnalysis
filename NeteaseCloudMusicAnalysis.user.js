@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         网易云一键解析
 // @namespace    https://bbs.tampermonkey.net.cn/
-// @version      0.1.0
+// @version      0.1.1
 // @description  获取网易云音乐音乐直链(支持VIP)
 // @author       Miro
-// @updateURL    https://github.com/529565622/NeteaseCloudMusicAnalysis/edit/main/NeteaseCloudMusicAnalysis.user.js
+// @updateURL    https://raw.githubusercontent.com/529565622/NeteaseCloudMusicAnalysis/main/NeteaseCloudMusicAnalysis.user.js
 // @match        https://music.163.com*
 // @grant        GM_notification
 // ==/UserScript==
