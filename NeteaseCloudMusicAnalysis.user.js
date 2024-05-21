@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         网易云一键解析
 // @namespace    https://bbs.tampermonkey.net.cn/
-// @version      0.1.3
+// @version      0.1.4
 // @description  获取网易云音乐音乐直链(支持VIP)
 // @author       Miro(https://vrchat.com/home/user/usr_20b8e0e4-9e16-406a-a61d-8a627ec1a2e3)
 // @updateURL    https://raw.githubusercontent.com/529565622/NeteaseCloudMusicAnalysis/main/NeteaseCloudMusicAnalysis.user.js
-// @match        https://music.163.com*
+// @match        https://music.163.com/song?id=*
 // @grant        GM_notification
 // @require      https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.2.1/jquery.min.js
 // ==/UserScript==
