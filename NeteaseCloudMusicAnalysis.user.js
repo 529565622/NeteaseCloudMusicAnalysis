@@ -5,31 +5,18 @@
 // @description  获取网易云音乐音乐直链(支持VIP)
 // @author       Miro(https://vrchat.com/home/user/usr_20b8e0e4-9e16-406a-a61d-8a627ec1a2e3)
 // @updateURL    https://raw.githubusercontent.com/529565622/NeteaseCloudMusicAnalysis/main/NeteaseCloudMusicAnalysis.user.js
-// @match        https://music.163.com/song?id=*
+// @match        https://music.163.com*
 // @grant        GM_notification
 // @require      https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.2.1/jquery.min.js
 // ==/UserScript==
 
 (function () {
   'use strict'
-  var button = document.createElement("button")
-  button.textContent = "一键解析"
-  button.style.marginLeft = "12px"
-  button.style.marginRight = "-40px"
-  button.style.height = "32px"
-  button.style.width = "90px"
-  button.style.align = "center"
-  button.style.color = "#FFFFFF"
-  button.style.background = "#000000"
-  button.style.border = "1px solid #ccc"
-  button.style.borderRadius = "20px"
-  button.style.fontSize = '12px'
-  button.addEventListener("click", clickBotton)
   // 创建右下角解析按钮
-  var CloudMusicAnalysisbutton = `<button id="CloudMusicAnalysis" style="z-index:999;width: 45px;height:45px;color: rgb(255, 255, 255); background: rgb(0, 174, 236); border: 1px solid rgb(241, 242, 243); border-radius: 6px; font-size: 14px;top:850px;right:0px;position:fixed;">网易</br>解析</button>`;
+  var CloudMusicAnalysisbutton = `<button id="CloudMusicAnalysis" style="z-index:999;width: 45px;height:45px;color: rgb(255, 255, 255); background: rgb(0, 174, 236); border: 1px solid rgb(241, 242, 243); border-radius: 6px; font-size: 14px;top:800px;right:0px;position:fixed;">网易</br>解析</button>`;
   $("body").append(CloudMusicAnalysisbutton)
   document.getElementById('CloudMusicAnalysis').addEventListener('click', clickBotton)
-  var CloudMusicAnalysisbutton1 = `<button id="CloudMusicAnalysis1" style="z-index:999;width: 45px;height:45px;color: rgb(255, 255, 255); background: rgb(0, 174, 236); border: 1px solid rgb(241, 242, 243); border-radius: 6px; font-size: 14px;top:200px;left:0px;position:fixed;">网易</br>解析</button>`;
+  var CloudMusicAnalysisbutton1 = `<button id="CloudMusicAnalysis1" style="z-index:999;width: 45px;height:45px;color: rgb(255, 255, 255); background: rgb(0, 174, 236); border: 1px solid rgb(241, 242, 243); border-radius: 6px; font-size: 14px;top:100px;left:0px;position:fixed;">网易</br>解析</button>`;
   $("body").append(CloudMusicAnalysisbutton1)
   document.getElementById('CloudMusicAnalysis1').addEventListener('click', clickBotton)
   function a(a) {
@@ -103,8 +90,4 @@
       }
     };
   }
-  setTimeout(function () {
-    var like_comment = document.getElementsByClassName('m-tophead f-pr j-tflag')[0]
-    like_comment.appendChild(button)
-  }, 5000)
 })()
